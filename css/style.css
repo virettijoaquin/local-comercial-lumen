@@ -13,6 +13,7 @@
     --color-cream: #F9F9F9;
     --color-sage: #A8DADC;
     --color-mint: #EAF4F4;
+    --color-mint-lighter: #f3fbfb;
     --color-teal: #457B9D;
     --color-primary-hover: #336c9f;
 
@@ -454,7 +455,7 @@ main {
 }
 
 .testimonial__card {
-    background: var(--color-mint);
+    background: var(--color-mint-lighter);
     padding: 2rem;
     border-radius: var(--border-radius);
     text-align: left;
