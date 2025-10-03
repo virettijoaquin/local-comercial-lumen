@@ -1,17 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" href="./img/icons/favicon.png">
+    <title>Lumen</title>
 </head>
 <body>
 
 
 <header class="header" id="header">
     <nav class="nav container">
-        <a class="nav__logo" href="#">Lumen</a>
+        <a class="nav__logo" href="#">
+            <img src="./img/icons/icon.svg" alt="Icono de Lumen" class="nav__logo-icon">
+            <h1>Lumen</h1>
+        </a>
 
         <div class="nav__toggle" id="nav-toggle">
             <i class="fi fi-sr-menu-burger"></i>
@@ -40,8 +44,8 @@
                 <p>Pensados para acompañarte en cada momento y resaltar tu estilo único. Calidad, diseño y protección en
                     un solo lugar.</p>
                 <div class="banner__actions">
-                    <a class="button" href="">Nuestros Lentes</a>
-                    <a class="button--outline" href="">Agendá una cita</a>
+                    <a class="button" href="./pages/productos.html">Nuestros Lentes</a>
+                    <a class="button--outline" href="./pages/contacto.html">Agendá una cita</a>
                 </div>
 
                 <div class="banner__testimonials">
@@ -133,7 +137,7 @@
               <div class="promo-banner__text">
                   <h2>✨ Promoción Exclusiva ✨</h2>
                   <p>Aprovechá <strong>30% OFF</strong> en lentes de sol seleccionados.<br> Solo por tiempo limitado.</p>
-                  <a href="#featured" class="button--secondary">Ver descuentos</a>
+                  <a href="./pages/productos.html" class="button--secondary">Ver descuentos</a>
               </div>
               <div class="promo-banner__image">
                   <img src="./img/white-glasses.webp" alt="Lentes de sol en promoción">
@@ -141,13 +145,10 @@
           </div>
       </div>
     </section>
-
-
 </main>
 
 <footer class="footer">
     <div class="container footer__grid">
-        <!-- Marca / breve descripción -->
         <div class="footer__brand">
             <a class="footer__logo" href="#">Lumen</a>
             <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
@@ -157,7 +158,7 @@
         <nav class="footer__nav" aria-label="Mapa del sitio">
             <h4 class="footer__title">Mapa del sitio</h4>
             <ul class="footer__list">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="./pages/nosotros.html">Nosotros</a></li>
                 <li><a href="./pages/productos.html">Productos</a></li>
                 <li><a href="./pages/contacto.html">Contacto</a></li>
@@ -168,9 +169,18 @@
         <div class="footer__social">
             <h4 class="footer__title">Seguinos</h4>
             <ul class="footer__social-list">
-                <li><a href="#" aria-label="Instagram">@lumen</a></li>
-                <li><a href="#" aria-label="Facebook">/lumen</a></li>
-                <li><a href="#" aria-label="TikTok">@lumen</a></li>
+                <li>
+                    <i class="fi fi-brands-instagram"></i>
+                    <a href="#" aria-label="Instagram">@lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-facebook"></i>
+                    <a href="#" aria-label="Facebook">/lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-tik-tok"></i>
+                    <a href="#" aria-label="TikTok">@lumen</a>
+                </li>
                 <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
             </ul>
         </div>

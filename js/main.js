@@ -13,7 +13,7 @@ navClose.addEventListener("click", () => {
     navMenu.classList.remove("show-menu");
 });
 
-// Toggle simple para filtros visuales (sin librerías)
+// Toggle simple para filtros visuales
 const filterBtns = document.querySelectorAll('.products-filters__btn');
 const items = document.querySelectorAll('.product-grid--catalog .product-card');
 
@@ -30,3 +30,13 @@ filterBtns.forEach(btn => btn.addEventListener('click', () => {
         }
     });
 }));
+
+// Detecta el scroll y agrega/remueve la clase
+window.addEventListener("scroll", function () {
+    const header = document.getElementById("header");
+    if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});

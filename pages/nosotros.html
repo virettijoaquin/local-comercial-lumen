@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <title>Nosotros | Lumen</title>
-    <meta name="description"
-          content="Conocé la historia de Lumen, nuestra misión y el equipo detrás de tus lentes favoritos."/>
+    <link rel="icon" type="image/png" href="../img/icons/favicon.png">
 </head>
 <body>
 
 <header class="header" id="header">
     <nav class="nav container">
-        <a class="nav__logo" href="../index.html">Lumen</a>
+        <a class="nav__logo" href="../index.html">
+            <img src="../img/icons/icon.svg" alt="Icono de Lumen" class="nav__logo-icon">
+            <h1>Lumen</h1>
+        </a>
 
         <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" role="button" tabindex="0">
             <i class="fi fi-sr-menu-burger" aria-hidden="true"></i>
@@ -141,10 +143,11 @@
 <footer class="footer">
     <div class="container footer__grid">
         <div class="footer__brand">
-            <a class="footer__logo" href="../index.html">Lumen</a>
+            <a class="footer__logo" href="#">Lumen</a>
             <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
         </div>
 
+        <!-- Mapa del sitio -->
         <nav class="footer__nav" aria-label="Mapa del sitio">
             <h4 class="footer__title">Mapa del sitio</h4>
             <ul class="footer__list">
@@ -155,21 +158,32 @@
             </ul>
         </nav>
 
+        <!-- Redes -->
         <div class="footer__social">
             <h4 class="footer__title">Seguinos</h4>
             <ul class="footer__social-list">
-                <li><a href="#" aria-label="Instagram">@lumen</a></li>
-                <li><a href="#" aria-label="Facebook">/lumen</a></li>
-                <li><a href="#" aria-label="TikTok">@lumen</a></li>
+                <li>
+                    <i class="fi fi-brands-instagram"></i>
+                    <a href="#" aria-label="Instagram">@lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-facebook"></i>
+                    <a href="#" aria-label="Facebook">/lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-tik-tok"></i>
+                    <a href="#" aria-label="TikTok">@lumen</a>
+                </li>
                 <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
             </ul>
         </div>
 
+        <!-- Newsletter -->
         <div class="footer__newsletter">
             <h4 class="footer__title">Newsletter</h4>
             <p class="footer__hint">Novedades, lanzamientos y promos (cero spam).</p>
             <form class="footer__form" action="#" method="post">
-                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required/>
+                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required>
                 <button class="button--secondary" type="submit">Suscribirme</button>
             </form>
         </div>

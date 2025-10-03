@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <title>Productos | Lumen</title>
-    <meta name="description" content="Catálogo de Lumen: armazones, lentes de sol, lentes de contacto y accesorios."/>
+    <link rel="icon" type="image/png" href="../img/icons/favicon.png">
 </head>
 <body>
 
 <header class="header" id="header">
     <nav class="nav container">
-        <a class="nav__logo" href="../index.html">Lumen</a>
+        <a class="nav__logo" href="../index.html">
+            <img src="../img/icons/icon.svg" alt="Icono de Lumen" class="nav__logo-icon">
+            <h1>Lumen</h1>
+        </a>
 
         <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" role="button" tabindex="0">
             <i class="fi fi-sr-menu-burger" aria-hidden="true"></i>
@@ -21,7 +24,8 @@
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
                 <li class="nav__item"><a class="nav__link" href="./nosotros.html">Nosotros</a></li>
-                <li class="nav__item"><a class="nav__link" href="./productos.html" aria-current="page">Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="./productos.html" aria-current="page">Productos</a>
+                </li>
                 <li class="nav__item"><a class="nav__link" href="./contacto.html">Contacto</a></li>
             </ul>
             <div class="nav__close" id="nav-close" aria-label="Cerrar menú" role="button" tabindex="0">
@@ -33,7 +37,6 @@
 
 <main>
 
-    <!-- HERO -->
     <section class="container products-hero">
         <h1 class="products-hero__title">Encontrá tus próximos lentes</h1>
         <p class="products-hero__subtitle">
@@ -47,19 +50,16 @@
         </nav>
     </section>
 
-
     <!-- PROMO -->
     <section class="container products-promo">
-        <div class="products-promo">
-            <div class="products-promo__content">
-                <div class="products-promo__text">
-                    <h2 class="products-promo__title">2x1 en cristales + 20% OFF en armazones</h2>
-                    <p class="products-promo__desc">En combinaciones seleccionadas. Hasta agotar stock.</p>
-                    <a href="#destacados" class="button">Aprovechar</a>
-                </div>
-                <div class="products-promo__media">
-                    <img src="../img/glasses-promo.webp" alt="Promoción en lentes" class="products-promo__img">
-                </div>
+        <div class="products-promo__content">
+            <div class="products-promo__text">
+                <h2 class="products-promo__title">2x1 en cristales + 20% OFF en armazones</h2>
+                <p class="products-promo__desc">En combinaciones seleccionadas. Hasta agotar stock.</p>
+                <a href="#destacados" class="button">Aprovechar</a>
+            </div>
+            <div class="products-promo__media">
+                <img src="../img/glasses-promo.webp" alt="Promoción en lentes" class="products-promo__img">
             </div>
         </div>
     </section>
@@ -72,7 +72,6 @@
         </header>
 
         <div class="product-grid">
-            <!-- Card -->
             <article class="product-card">
                 <div class="product-card__media">
                     <img src="../img/product-5.jpg" alt="Armazón Lumen Oslo Negro" class="product-card__img">
@@ -117,7 +116,7 @@
                 </div>
                 <div class="product-card__body">
                     <h3 class="product-card__title">Contacto Mensual</h3>
-                    <p class="product-card__meta">Alta humectación · Caja x6</p>
+                    <p class="product-card__meta">Alta humectación · Filtro Azul</p>
                     <div class="product-card__prices">
                         <span class="product-card__price">$54.500</span>
                     </div>
@@ -143,7 +142,6 @@
         </header>
 
         <div class="product-grid product-grid--catalog">
-            <!-- Ejemplos; duplicá/ajustá según tu inventario -->
             <article class="product-card" data-category="armazones">
                 <div class="product-card__media">
                     <img src="../img/product-4.jpg" alt="Armazón Porto Carey" class="product-card__img">
@@ -178,7 +176,7 @@
                 </div>
                 <div class="product-card__body">
                     <h3 class="product-card__title">Diario Comfort</h3>
-                    <p class="product-card__meta">Caja x30</p>
+                    <p class="product-card__meta">Importado</p>
                     <div class="product-card__prices"><span class="product-card__price">$39.000</span></div>
                     <div class="product-card__actions">
                         <a class="button button--sm" href="#contacto">Consultar</a>
@@ -229,7 +227,6 @@
 
 <footer class="footer">
     <div class="container footer__grid">
-        <!-- Marca / breve descripción -->
         <div class="footer__brand">
             <a class="footer__logo" href="#">Lumen</a>
             <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
@@ -239,10 +236,10 @@
         <nav class="footer__nav" aria-label="Mapa del sitio">
             <h4 class="footer__title">Mapa del sitio</h4>
             <ul class="footer__list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -250,9 +247,18 @@
         <div class="footer__social">
             <h4 class="footer__title">Seguinos</h4>
             <ul class="footer__social-list">
-                <li><a href="#" aria-label="Instagram">@lumen</a></li>
-                <li><a href="#" aria-label="Facebook">/lumen</a></li>
-                <li><a href="#" aria-label="TikTok">@lumen</a></li>
+                <li>
+                    <i class="fi fi-brands-instagram"></i>
+                    <a href="#" aria-label="Instagram">@lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-facebook"></i>
+                    <a href="#" aria-label="Facebook">/lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-tik-tok"></i>
+                    <a href="#" aria-label="TikTok">@lumen</a>
+                </li>
                 <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
             </ul>
         </div>
@@ -280,7 +286,6 @@
     </div>
 </footer>
 
-
-    <script src="../js/main.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

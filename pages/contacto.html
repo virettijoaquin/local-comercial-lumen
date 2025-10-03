@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <title>Contacto | Lumen</title>
-    <meta name="description"
-          content="Conocé la historia de Lumen, nuestra misión y el equipo detrás de tus lentes favoritos."/>
+    <link rel="icon" type="image/png" href="../img/icons/favicon.png">
 </head>
 <body>
 
 <header class="header" id="header">
     <nav class="nav container">
-        <a class="nav__logo" href="../index.html">Lumen</a>
+        <a class="nav__logo" href="../index.html">
+            <img src="../img/icons/icon.svg" alt="Icono de Lumen" class="nav__logo-icon">
+            <h1>Lumen</h1>
+        </a>
 
         <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" role="button" tabindex="0">
             <i class="fi fi-sr-menu-burger" aria-hidden="true"></i>
@@ -33,8 +35,6 @@
 </header>
 
 <main>
-
-    <!-- CONTACT HERO -->
     <section class="contact-hero container" id="contacto">
         <h1 class="contact-hero__title">Hablemos</h1>
         <p class="contact-hero__subtitle">
@@ -42,41 +42,41 @@
         </p>
     </section>
 
-    <!-- CONTACT GRID: INFO + FORM -->
     <section class="contact-grid container">
-        <!-- Card de Info -->
-        <aside class="contact-card">
-            <h2 class="contact-card__title">Datos de contacto</h2>
+        <div class="contact-grid__asides">
+            <aside class="contact-card">
+                <h2 class="contact-card__title">Datos de contacto</h2>
 
-            <ul class="contact-list" aria-label="Medios de contacto">
-                <li class="contact-list__item">
-                    <span class="contact-list__label">Teléfono</span>
-                    <a class="contact-list__value" href="tel:+541100000000">+54 9 11 0000-0000</a>
-                </li>
-                <li class="contact-list__item">
-                    <span class="contact-list__label">WhatsApp</span>
-                    <a class="contact-list__value" href="https://wa.me/5491100000000" target="_blank" rel="noopener">Chatear</a>
-                </li>
-                <li class="contact-list__item">
-                    <span class="contact-list__label">Email</span>
-                    <a class="contact-list__value" href="mailto:hola@lumen.com">hola@lumen.com</a>
-                </li>
-                <li class="contact-list__item">
-                    <span class="contact-list__label">Dirección</span>
-                    <span class="contact-list__value">Galería Lumen, Local 12 – CABA</span>
-                </li>
-                <li class="contact-list__item">
-                    <span class="contact-list__label">Horario</span>
-                    <span class="contact-list__value">Lun a Sáb, 10:00–19:00</span>
-                </li>
-            </ul>
+                <ul class="contact-list" aria-label="Medios de contacto">
+                    <li class="contact-list__item">
+                        <span class="contact-list__label">Teléfono</span>
+                        <a class="contact-list__value" href="tel:+541100000000">+54 9 11 0000-0000</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__label">WhatsApp</span>
+                        <a class="contact-list__value" href="https://wa.me/5491100000000" target="_blank"
+                           rel="noopener">Chatear</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__label">Email</span>
+                        <a class="contact-list__value" href="mailto:hola@lumen.com">hola@lumen.com</a>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__label">Dirección</span>
+                        <span class="contact-list__value">Galería Lumen, Local 12 – CABA</span>
+                    </li>
+                    <li class="contact-list__item">
+                        <span class="contact-list__label">Horario</span>
+                        <span class="contact-list__value">Lun a Sáb, 10:00–19:00</span>
+                    </li>
+                </ul>
+            </aside>
 
-            <div class="contact-badges" aria-label="Canales sociales">
-                <a href="#" class="contact-badge" aria-label="Instagram">@lumen</a>
-                <a href="#" class="contact-badge" aria-label="TikTok">@lumen</a>
-                <a href="#" class="contact-badge" aria-label="Facebook">/lumen</a>
-            </div>
-        </aside>
+            <!-- Card de Imagen -->
+            <aside class="contact-card__image">
+                <img src="../img/doctor-4.jpg" alt="Equipo de Lumen" class="contact-card__img"/>
+            </aside>
+        </div>
 
         <!-- Formulario -->
         <div class="contact-form__wrap">
@@ -117,7 +117,7 @@
 
                 <div class="contact-field">
                     <label class="contact-field__label" for="cf-mensaje">Mensaje</label>
-                    <textarea class="contact-field__textarea" id="cf-mensaje" name="mensaje" rows="5" required
+                    <textarea class="contact-field__textarea" id="cf-mensaje" name="mensaje" rows="9" required
                               placeholder="Contanos en qué te ayudamos"></textarea>
                 </div>
 
@@ -129,7 +129,7 @@
                 </div>
 
                 <div class="contact-actions">
-                    <button type="submit" class="contact-btn contact-btn--primary">Enviar consulta</button>
+                    <button type="submit" class="contact-btn button">Enviar consulta</button>
                     <a href="https://wa.me/5491100000000" class="contact-btn contact-btn--ghost" target="_blank"
                        rel="noopener"
                        aria-label="Escribir por WhatsApp">WhatsApp</a>
@@ -155,7 +155,7 @@
         </div>
     </section>
 
-    <!-- Mapa (placeholder, podés reemplazar por iframe de Google Maps) -->
+    <!-- Mapa -->
     <section class="contact-map container" aria-label="Mapa de ubicación">
         <iframe class="contact-map__iframe"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.194411074193!2d-58.377353823476625!3d-34.59924515726334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb0b1afcaf%3A0x8d53a5cf4f399e9c!2zR2FsZXLDrWFzIFBhY8OtZmljbw!5e0!3m2!1sen!2sar!4v1759477636395!5m2!1sen!2sar"
@@ -194,10 +194,11 @@
 <footer class="footer">
     <div class="container footer__grid">
         <div class="footer__brand">
-            <a class="footer__logo" href="../index.html">Lumen</a>
+            <a class="footer__logo" href="#">Lumen</a>
             <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
         </div>
 
+        <!-- Mapa del sitio -->
         <nav class="footer__nav" aria-label="Mapa del sitio">
             <h4 class="footer__title">Mapa del sitio</h4>
             <ul class="footer__list">
@@ -208,21 +209,32 @@
             </ul>
         </nav>
 
+        <!-- Redes -->
         <div class="footer__social">
             <h4 class="footer__title">Seguinos</h4>
             <ul class="footer__social-list">
-                <li><a href="#" aria-label="Instagram">@lumen</a></li>
-                <li><a href="#" aria-label="Facebook">/lumen</a></li>
-                <li><a href="#" aria-label="TikTok">@lumen</a></li>
+                <li>
+                    <i class="fi fi-brands-instagram"></i>
+                    <a href="#" aria-label="Instagram">@lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-facebook"></i>
+                    <a href="#" aria-label="Facebook">/lumen</a>
+                </li>
+                <li>
+                    <i class="fi fi-brands-tik-tok"></i>
+                    <a href="#" aria-label="TikTok">@lumen</a>
+                </li>
                 <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
             </ul>
         </div>
 
+        <!-- Newsletter -->
         <div class="footer__newsletter">
             <h4 class="footer__title">Newsletter</h4>
             <p class="footer__hint">Novedades, lanzamientos y promos (cero spam).</p>
             <form class="footer__form" action="#" method="post">
-                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required/>
+                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required>
                 <button class="button--secondary" type="submit">Suscribirme</button>
             </form>
         </div>
