@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>Productos | Lumen</title>
+    <meta name="description" content="Catálogo de Lumen: armazones, lentes de sol, lentes de contacto y accesorios."/>
+</head>
+<body>
+
+<header class="header" id="header">
+    <nav class="nav container">
+        <a class="nav__logo" href="../index.html">Lumen</a>
+
+        <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" role="button" tabindex="0">
+            <i class="fi fi-sr-menu-burger" aria-hidden="true"></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="./nosotros.html">Nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="./productos.html" aria-current="page">Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="./contacto.html">Contacto</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close" aria-label="Cerrar menú" role="button" tabindex="0">
+                <i class="fi fi-sr-cross-small" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="container products-hero">
+        <h1 class="products-hero__title">Encontrá tus próximos lentes</h1>
+        <p class="products-hero__subtitle">
+            Armazones de diseño, protección UV400 y lentes de contacto para todas las graduaciones.
+        </p>
+
+        <nav class="hero-segment" aria-label="Atajos de sección">
+            <a class="hero-segment__item is-active" href="#destacados">Destacados</a>
+            <a class="hero-segment__item" href="#catalogo">Catálogo</a>
+            <a class="hero-segment__item" href="#servicios">Servicios</a>
+        </nav>
+    </section>
+
+
+    <!-- PROMO -->
+    <section class="container products-promo">
+        <div class="products-promo">
+            <div class="products-promo__content">
+                <div class="products-promo__text">
+                    <h2 class="products-promo__title">2x1 en cristales + 20% OFF en armazones</h2>
+                    <p class="products-promo__desc">En combinaciones seleccionadas. Hasta agotar stock.</p>
+                    <a href="#destacados" class="button">Aprovechar</a>
+                </div>
+                <div class="products-promo__media">
+                    <img src="../img/glasses-promo.webp" alt="Promoción en lentes" class="products-promo__img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTACADOS -->
+    <section class="container products-featured" id="destacados">
+        <header class="products-section__head">
+            <h2 class="products-section__title">Destacados de la semana</h2>
+            <p class="products-section__subtitle">Elegidos por su confort, durabilidad y estilo.</p>
+        </header>
+
+        <div class="product-grid">
+            <!-- Card -->
+            <article class="product-card">
+                <div class="product-card__media">
+                    <img src="../img/product-5.jpg" alt="Armazón Lumen Oslo Negro" class="product-card__img">
+                    <span class="product-card__badge">Nuevo</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Lumen Oslo</h3>
+                    <p class="product-card__meta">Acetato · Negro · Unisex</p>
+                    <div class="product-card__prices">
+                        <span class="product-card__price">$79.900</span>
+                        <span class="product-card__price--old">$92.000</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <a class="button button--sm" href="#contacto">Consultar</a>
+                        <a class="button button--sm button--outline" href="#catalogo">Ver más</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__media">
+                    <img src="../img/product-2.jpg" alt="Lentes de sol Siena Ámbar" class="product-card__img">
+                    <span class="product-card__badge product-card__badge--accent">-20%</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Siena Ámbar</h3>
+                    <p class="product-card__meta">UV400 · Polarizado</p>
+                    <div class="product-card__prices">
+                        <span class="product-card__price">$68.000</span>
+                        <span class="product-card__price--old">$85.000</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <a class="button button--sm" href="#contacto">Consultar</a>
+                        <a class="button button--sm button--outline" href="#catalogo">Ver más</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-card__media">
+                    <img src="../img/product-3.jpg" alt="Lentes de contacto mensuales" class="product-card__img">
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Contacto Mensual</h3>
+                    <p class="product-card__meta">Alta humectación · Caja x6</p>
+                    <div class="product-card__prices">
+                        <span class="product-card__price">$54.500</span>
+                    </div>
+                    <div class="product-card__actions">
+                        <a class="button button--sm" href="#contacto">Consultar</a>
+                        <a class="button button--sm button--outline" href="#catalogo">Ver más</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="container products-catalog" id="catalogo">
+        <header class="products-section__head">
+            <h2 class="products-section__title">Catálogo completo</h2>
+            <div class="products-filters">
+                <button class="products-filters__btn is-active" data-filter="*">Todos</button>
+                <button class="products-filters__btn" data-filter="armazones">Armazones</button>
+                <button class="products-filters__btn" data-filter="sol">Sol</button>
+                <button class="products-filters__btn" data-filter="contacto">Contacto</button>
+            </div>
+        </header>
+
+        <div class="product-grid product-grid--catalog">
+            <!-- Ejemplos; duplicá/ajustá según tu inventario -->
+            <article class="product-card" data-category="armazones">
+                <div class="product-card__media">
+                    <img src="../img/product-4.jpg" alt="Armazón Porto Carey" class="product-card__img">
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Porto Carey</h3>
+                    <p class="product-card__meta">Acetato · Carey</p>
+                    <div class="product-card__prices"><span class="product-card__price">$72.000</span></div>
+                    <div class="product-card__actions">
+                        <a class="button button--sm" href="#contacto">Consultar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="sol">
+                <div class="product-card__media">
+                    <img src="../img/product-8.jpg" alt="Sol Verona Negro" class="product-card__img">
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Verona</h3>
+                    <p class="product-card__meta">UV400 · Negro</p>
+                    <div class="product-card__prices"><span class="product-card__price">$64.900</span></div>
+                    <div class="product-card__actions">
+                        <a class="button button--sm" href="#contacto">Consultar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="contacto">
+                <div class="product-card__media">
+                    <img src="../img/product-9.webp" alt="Contacto diario pack" class="product-card__img">
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Diario Comfort</h3>
+                    <p class="product-card__meta">Caja x30</p>
+                    <div class="product-card__prices"><span class="product-card__price">$39.000</span></div>
+                    <div class="product-card__actions">
+                        <a class="button button--sm" href="#contacto">Consultar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="armazones">
+                <div class="product-card__media">
+                    <img src="../img/product-7.jpg" alt="Armazón Berlin Gris" class="product-card__img">
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Berlin Gris</h3>
+                    <p class="product-card__meta">Metal · Gris</p>
+                    <div class="product-card__prices"><span class="product-card__price">$76.000</span></div>
+                    <div class="product-card__actions">
+                        <a class="button button--sm" href="#contacto">Consultar</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="container products-services" id="servicios">
+        <header class="products-section__head">
+            <h2 class="products-section__title">Servicios y cuidados</h2>
+            <p class="products-section__subtitle">Ajustes, limpieza y garantía de fabricación.</p>
+        </header>
+
+        <ul class="services-list">
+            <li class="services-list__item">
+                <h3 class="services-list__title">Ajuste sin cargo</h3>
+                <p class="services-list__desc">Regulamos patillas y puente para asegurar confort diario.</p>
+            </li>
+            <li class="services-list__item">
+                <h3 class="services-list__title">Limpieza pro</h3>
+                <p class="services-list__desc">Lavado ultrasónico y repaso de tornillos en tienda.</p>
+            </li>
+            <li class="services-list__item">
+                <h3 class="services-list__title">Garantía</h3>
+                <p class="services-list__desc">Cobertura por defectos de fabricación durante 6 meses.</p>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+        <!-- Marca / breve descripción -->
+        <div class="footer__brand">
+            <a class="footer__logo" href="#">Lumen</a>
+            <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
+        </div>
+
+        <!-- Mapa del sitio -->
+        <nav class="footer__nav" aria-label="Mapa del sitio">
+            <h4 class="footer__title">Mapa del sitio</h4>
+            <ul class="footer__list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Redes -->
+        <div class="footer__social">
+            <h4 class="footer__title">Seguinos</h4>
+            <ul class="footer__social-list">
+                <li><a href="#" aria-label="Instagram">@lumen</a></li>
+                <li><a href="#" aria-label="Facebook">/lumen</a></li>
+                <li><a href="#" aria-label="TikTok">@lumen</a></li>
+                <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer__newsletter">
+            <h4 class="footer__title">Newsletter</h4>
+            <p class="footer__hint">Novedades, lanzamientos y promos (cero spam).</p>
+            <form class="footer__form" action="#" method="post">
+                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required>
+                <button class="button--secondary" type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+            <small>©<span id="year"></span> Lumen. Todos los derechos reservados.</small>
+            <ul class="footer__legal">
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
