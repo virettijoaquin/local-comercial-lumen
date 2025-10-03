@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<header class="header" id="header">
+    <nav class="nav container">
+        <a class="nav__logo" href="#">Lumen</a>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="fi fi-sr-menu-burger"></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/nosotros.html">Nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/productos.html">Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+            <!-- Close button -->
+            <div class="nav__close" id="nav-close">
+                <i class="fi fi-sr-cross-small"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="container" id="home">
+        <div class="banner">
+            <div class="banner__text">
+                <h1>Mirá el mundo a través de Lumen.</h1>
+                <p>Pensados para acompañarte en cada momento y resaltar tu estilo único. Calidad, diseño y protección en un solo lugar.</p>
+                <div class="banner__actions">
+                    <a class="button" href="">Nuestros Lentes</a>
+                    <a class="button--secondary" href="">Agendá una cita</a>
+                </div>
+
+                <div class="banner__testimonials">
+
+                    <div class="testimonials__text">
+                        <i class="fi fi-sr-star"></i><i class="fi fi-sr-star"></i><i class="fi fi-sr-star"></i>
+                        <p>+10 mil reseñas positivas</p>
+                    </div>
+
+                    <div class="testimonials__icon">
+                        <i class="fi fi-tr-thumbs-up-trust"></i>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="banner__image">
+                <div class="banner__image-container">
+                    <img class="banner__image-img" src="./img/banner-model.png" alt="Modelo con lentes de sol">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials container" id="testimonials">
+        <h2 class="testimonials__title">Lo que dicen nuestros clientes</h2>
+        <p class="testimonials__subtitle">Experiencias reales de personas que confiaron en Lumen.</p>
+
+        <div class="testimonials__grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial__card">
+                <div class="testimonial__header">
+                    <img src="./img/client1.webp" alt="Foto de cliente 1" class="testimonial__img">
+                    <div>
+                        <h3 class="testimonial__name">María Fernández</h3>
+                        <p class="testimonial__role">Diseñadora Gráfica</p>
+                    </div>
+                </div>
+                <div class="testimonial__rating">
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                </div>
+                <p class="testimonial__text">“Los lentes son hermosos y cómodos. La atención fue excelente, me ayudaron a encontrar el par perfecto para mi estilo.”</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial__card">
+                <div class="testimonial__header">
+                    <img src="./img/client2.webp" alt="Foto de cliente 2" class="testimonial__img">
+                    <div>
+                        <h3 class="testimonial__name">Julián Pérez</h3>
+                        <p class="testimonial__role">Arquitecto</p>
+                    </div>
+                </div>
+                <div class="testimonial__rating">
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-rr-star"></i>
+                </div>
+                <p class="testimonial__text">“Muy buena calidad y diseño. Me atendieron con paciencia y me explicaron todas las opciones.”</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial__card">
+                <div class="testimonial__header">
+                    <img src="./img/client3.jpg" alt="Foto de cliente 3" class="testimonial__img">
+                    <div>
+                        <h3 class="testimonial__name">Laura Gómez</h3>
+                        <p class="testimonial__role">Fotógrafa</p>
+                    </div>
+                </div>
+                <div class="testimonial__rating">
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                    <i class="fi fi-sr-star"></i>
+                </div>
+                <p class="testimonial__text">“Me sorprendió lo rápido que fue el servicio y lo lindos que son los lentes. ¡100% recomendado!”</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="promo">
+      <div class="promo-banner">
+          <div class="promo-banner__content container">
+              <div class="promo-banner__text">
+                  <h2>✨ Promoción Exclusiva ✨</h2>
+                  <p>Aprovechá <strong>30% OFF</strong> en lentes de sol seleccionados.<br> Solo por tiempo limitado.</p>
+                  <a href="#featured" class="button">Ver descuentos</a>
+              </div>
+              <div class="promo-banner__image">
+                  <img src="./img/glasses-promo.webp" alt="Lentes de sol en promoción">
+              </div>
+          </div>
+      </div>
+    </section>
+
+
+</main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+        <!-- Marca / breve descripción -->
+        <div class="footer__brand">
+            <a class="footer__logo" href="#">Lumen</a>
+            <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
+        </div>
+
+        <!-- Mapa del sitio -->
+        <nav class="footer__nav" aria-label="Mapa del sitio">
+            <h4 class="footer__title">Mapa del sitio</h4>
+            <ul class="footer__list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/productos.html">Productos</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- Redes -->
+        <div class="footer__social">
+            <h4 class="footer__title">Seguinos</h4>
+            <ul class="footer__social-list">
+                <li><a href="#" aria-label="Instagram">@lumen</a></li>
+                <li><a href="#" aria-label="Facebook">/lumen</a></li>
+                <li><a href="#" aria-label="TikTok">@lumen</a></li>
+                <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer__newsletter">
+            <h4 class="footer__title">Newsletter</h4>
+            <p class="footer__hint">Novedades, lanzamientos y promos (cero spam).</p>
+            <form class="footer__form" action="#" method="post">
+                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required>
+                <button class="button" type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+            <small>©<span id="year"></span> Lumen. Todos los derechos reservados.</small>
+            <ul class="footer__legal">
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
