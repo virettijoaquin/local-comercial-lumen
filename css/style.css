@@ -564,6 +564,11 @@ main {
     background-color: var(--color-sage);
 }
 
+.promo-banner span {
+    position: relative;
+    bottom: -6px;
+}
+
 /* ========== NOSOTROS ========== */
 /* Historia */
 .about {
