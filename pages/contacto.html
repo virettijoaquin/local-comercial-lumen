@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>Contacto | Lumen</title>
+    <meta name="description"
+          content="Conocé la historia de Lumen, nuestra misión y el equipo detrás de tus lentes favoritos."/>
+</head>
+<body>
+
+<header class="header" id="header">
+    <nav class="nav container">
+        <a class="nav__logo" href="../index.html">Lumen</a>
+
+        <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" role="button" tabindex="0">
+            <i class="fi fi-sr-menu-burger" aria-hidden="true"></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="./nosotros.html">Nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="./productos.html">Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="./contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close" aria-label="Cerrar menú" role="button" tabindex="0">
+                <i class="fi fi-sr-cross-small" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero container" id="contacto">
+        <h1 class="contact-hero__title">Hablemos</h1>
+        <p class="contact-hero__subtitle">
+            ¿Tenés dudas sobre armazones, cristales o turnos? Escribinos o pasá por el local.
+        </p>
+    </section>
+
+    <!-- CONTACT GRID: INFO + FORM -->
+    <section class="contact-grid container">
+        <!-- Card de Info -->
+        <aside class="contact-card">
+            <h2 class="contact-card__title">Datos de contacto</h2>
+
+            <ul class="contact-list" aria-label="Medios de contacto">
+                <li class="contact-list__item">
+                    <span class="contact-list__label">Teléfono</span>
+                    <a class="contact-list__value" href="tel:+541100000000">+54 9 11 0000-0000</a>
+                </li>
+                <li class="contact-list__item">
+                    <span class="contact-list__label">WhatsApp</span>
+                    <a class="contact-list__value" href="https://wa.me/5491100000000" target="_blank" rel="noopener">Chatear</a>
+                </li>
+                <li class="contact-list__item">
+                    <span class="contact-list__label">Email</span>
+                    <a class="contact-list__value" href="mailto:hola@lumen.com">hola@lumen.com</a>
+                </li>
+                <li class="contact-list__item">
+                    <span class="contact-list__label">Dirección</span>
+                    <span class="contact-list__value">Galería Lumen, Local 12 – CABA</span>
+                </li>
+                <li class="contact-list__item">
+                    <span class="contact-list__label">Horario</span>
+                    <span class="contact-list__value">Lun a Sáb, 10:00–19:00</span>
+                </li>
+            </ul>
+
+            <div class="contact-badges" aria-label="Canales sociales">
+                <a href="#" class="contact-badge" aria-label="Instagram">@lumen</a>
+                <a href="#" class="contact-badge" aria-label="TikTok">@lumen</a>
+                <a href="#" class="contact-badge" aria-label="Facebook">/lumen</a>
+            </div>
+        </aside>
+
+        <!-- Formulario -->
+        <div class="contact-form__wrap">
+            <h2 class="contact-form__title">Escribinos</h2>
+            <form class="contact-form" action="#" method="post" novalidate>
+                <div class="contact-form__row">
+                    <div class="contact-field">
+                        <label class="contact-field__label" for="cf-nombre">Nombre</label>
+                        <input class="contact-field__input" type="text" id="cf-nombre" name="nombre" autocomplete="name"
+                               required/>
+                        <small class="contact-field__hint">Cómo querés que te llamemos</small>
+                    </div>
+                    <div class="contact-field">
+                        <label class="contact-field__label" for="cf-email">Email</label>
+                        <input class="contact-field__input" type="email" id="cf-email" name="email" autocomplete="email"
+                               required/>
+                        <small class="contact-field__hint">Te respondemos ahí</small>
+                    </div>
+                </div>
+
+                <div class="contact-form__row">
+                    <div class="contact-field">
+                        <label class="contact-field__label" for="cf-telefono">Teléfono (opcional)</label>
+                        <input class="contact-field__input" type="tel" id="cf-telefono" name="telefono"
+                               autocomplete="tel"/>
+                    </div>
+                    <div class="contact-field">
+                        <label class="contact-field__label" for="cf-motivo">Motivo</label>
+                        <select class="contact-field__input" id="cf-motivo" name="motivo" required>
+                            <option value="" selected disabled>Elegí una opción</option>
+                            <option value="turno">Pedir turno</option>
+                            <option value="producto">Consulta por producto</option>
+                            <option value="garantia">Garantía/Servicio técnico</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contact-field">
+                    <label class="contact-field__label" for="cf-mensaje">Mensaje</label>
+                    <textarea class="contact-field__textarea" id="cf-mensaje" name="mensaje" rows="5" required
+                              placeholder="Contanos en qué te ayudamos"></textarea>
+                </div>
+
+                <div class="contact-privacy">
+                    <label class="contact-checkbox">
+                        <input type="checkbox" name="acepto" required/>
+                        <span>Acepto la <a href="#" class="contact-link">Política de Privacidad</a>.</span>
+                    </label>
+                </div>
+
+                <div class="contact-actions">
+                    <button type="submit" class="contact-btn contact-btn--primary">Enviar consulta</button>
+                    <a href="https://wa.me/5491100000000" class="contact-btn contact-btn--ghost" target="_blank"
+                       rel="noopener"
+                       aria-label="Escribir por WhatsApp">WhatsApp</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sucursales / Ubicaciones -->
+    <section class="contact-locations container">
+        <h2 class="contact-section__title">Dónde estamos</h2>
+        <div class="contact-locations__grid">
+            <article class="contact-loc">
+                <h3 class="contact-loc__name">Lumen Centro</h3>
+                <p class="contact-loc__addr">Galería Lumen, Local 12 – CABA</p>
+                <p class="contact-loc__hours">Lun a Sáb, 10:00–19:00</p>
+            </article>
+            <article class="contact-loc">
+                <h3 class="contact-loc__name">Lumen Norte</h3>
+                <p class="contact-loc__addr">Av. del Libertador 9999 – Vicente López</p>
+                <p class="contact-loc__hours">Lun a Sáb, 10:00–19:00</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Mapa (placeholder, podés reemplazar por iframe de Google Maps) -->
+    <section class="contact-map container" aria-label="Mapa de ubicación">
+        <iframe class="contact-map__iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.194411074193!2d-58.377353823476625!3d-34.59924515726334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacb0b1afcaf%3A0x8d53a5cf4f399e9c!2zR2FsZXLDrWFzIFBhY8OtZmljbw!5e0!3m2!1sen!2sar!4v1759477636395!5m2!1sen!2sar"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- FAQ rápida -->
+    <section class="contact-faq container">
+        <h2 class="contact-section__title">Preguntas frecuentes</h2>
+        <details class="contact-faq__item">
+            <summary>¿Trabajan con obra social?</summary>
+            <p>Sí, consultanos por convenios vigentes y requisitos de cada plan.</p>
+        </details>
+        <details class="contact-faq__item">
+            <summary>¿Hacen envío a domicilio?</summary>
+            <p>Hacemos envíos a todo el país. Tarifas y tiempos según destino.</p>
+        </details>
+        <details class="contact-faq__item">
+            <summary>¿Puedo cambiar un producto?</summary>
+            <p>Tenés 10 días corridos con empaque y ticket. Ver <a href="#" class="contact-link">política de cambios</a>.
+            </p>
+        </details>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-cta">
+        <div class="contact-cta__inner container">
+            <h2 class="contact-cta__title">¿Querés probarte unos lentes?</h2>
+            <p class="contact-cta__desc">Reservá un turno y te asesoramos sin costo.</p>
+            <a href="#" class="button--outline">Reservar turno</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <a class="footer__logo" href="../index.html">Lumen</a>
+            <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Mapa del sitio">
+            <h4 class="footer__title">Mapa del sitio</h4>
+            <ul class="footer__list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__social">
+            <h4 class="footer__title">Seguinos</h4>
+            <ul class="footer__social-list">
+                <li><a href="#" aria-label="Instagram">@lumen</a></li>
+                <li><a href="#" aria-label="Facebook">/lumen</a></li>
+                <li><a href="#" aria-label="TikTok">@lumen</a></li>
+                <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__newsletter">
+            <h4 class="footer__title">Newsletter</h4>
+            <p class="footer__hint">Novedades, lanzamientos y promos (cero spam).</p>
+            <form class="footer__form" action="#" method="post">
+                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required/>
+                <button class="button--secondary" type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+            <small>©<span id="year"></span> Lumen. Todos los derechos reservados.</small>
+            <ul class="footer__legal">
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
