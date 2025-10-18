@@ -2130,3 +2130,57 @@ main {
         padding-block: 1.5rem 1.75rem;
     }
 }
+
+/*========== INPUT DE CANTIDAD (PROMOCIONES) ==========*/
+.qty-input {
+    width: 80px;
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    background: var(--color-cream);
+    border: 2px solid var(--color-sage);
+    border-radius: calc(var(--border-radius) * 0.25);
+    padding: 0.4rem 0.5rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qty-input:hover {
+    border-color: var(--color-teal);
+}
+
+.qty-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(69, 123, 157, 0.25);
+}
+
+.qty-input::-webkit-outer-spin-button,
+.qty-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.qty-input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* Opcional: estilo del contenedor en la card */
+.product-card__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 0.75rem;
+}
+
+/* En pantallas chicas: más angosto */
+@media (max-width: 480px) {
+    .qty-input {
+        width: 60px;
+        font-size: 0.9rem;
+        padding: 0.35rem;
+    }
+}
+

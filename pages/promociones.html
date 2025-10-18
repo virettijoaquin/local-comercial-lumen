@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <title>Promociones | Lumen</title>
+    <link rel="icon" type="image/png" href="../img/icons/favicon.png">
+</head>
+<body>
+
+<header class="header" id="header">
+    <nav class="nav container">
+        <a class="nav__logo" href="../index.html">
+            <img src="../img/icons/icon.svg" alt="Icono de Lumen" class="nav__logo-icon">
+            <h1>Lumen</h1>
+        </a>
+
+        <div class="nav__toggle" id="nav-toggle" aria-label="Abrir menú" role="button" tabindex="0">
+            <i class="fi fi-sr-menu-burger" aria-hidden="true"></i>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="./nosotros.html">Nosotros</a></li>
+                <li class="nav__item"><a class="nav__link" href="./productos.html">Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="./promociones.html" aria-current="page">Promociones</a></li>
+                <li class="nav__item"><a class="nav__link" href="./contacto.html">Contacto</a></li>
+            </ul>
+            <div class="nav__close" id="nav-close" aria-label="Cerrar menú" role="button" tabindex="0">
+                <i class="fi fi-sr-cross-small" aria-hidden="true"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="container products-hero">
+        <h1 class="products-hero__title">Promos activas</h1>
+        <p class="products-hero__subtitle">Aplicamos <strong>50% en la 2da unidad</strong> en los productos de esta página.</p>
+
+        <nav class="hero-segment" aria-label="Atajos de sección">
+            <a class="hero-segment__item is-active" href="#promo-grid">Productos</a>
+            <a class="hero-segment__item" href="#resumen">Resumen</a>
+        </nav>
+    </section>
+
+    <!-- GRID PROMOS (10 productos) -->
+    <section class="container products-catalog" id="promo-grid">
+        <header class="products-section__head">
+            <h2 class="products-section__title">2x1: 50% en la segunda unidad</h2>
+            <p class="products-section__subtitle">Sumá cantidades y mirá el total con descuento abajo.</p>
+        </header>
+
+        <div class="product-grid product-grid--catalog" id="promoProducts">
+            <!-- 1 -->
+            <article class="product-card" data-id="p1" data-price="79900" data-name="Lumen Oslo Negro">
+                <div class="product-card__media">
+                    <img src="../img/product-5.jpg" alt="Armazón Lumen Oslo Negro" class="product-card__img">
+                    <span class="product-card__badge">-50% 2da</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Lumen Oslo Negro</h3>
+                    <p class="product-card__meta">Acetato · Negro · Unisex</p>
+                    <div class="product-card__prices"><span class="product-card__price">$79.900</span></div>
+                    <div class="product-card__actions">
+                        <label class="sr-only" for="qty-p1">Cantidad</label>
+                        <input id="qty-p1" class="qty-input" type="number" inputmode="numeric" min="0" value="0" aria-label="Cantidad Lumen Oslo Negro">
+                    </div>
+                </div>
+            </article>
+
+            <!-- 2 -->
+            <article class="product-card" data-id="p2" data-price="68000" data-name="Siena Ámbar">
+                <div class="product-card__media">
+                    <img src="../img/product-2.jpg" alt="Lentes de sol Siena Ámbar" class="product-card__img">
+                    <span class="product-card__badge">-50% 2da</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Siena Ámbar</h3>
+                    <p class="product-card__meta">UV400 · Polarizado</p>
+                    <div class="product-card__prices"><span class="product-card__price">$68.000</span></div>
+                    <div class="product-card__actions">
+                        <label class="sr-only" for="qty-p2">Cantidad</label>
+                        <input id="qty-p2" class="qty-input" type="number" min="0" value="0" aria-label="Cantidad Siena Ámbar">
+                    </div>
+                </div>
+            </article>
+
+            <!-- 3 -->
+            <article class="product-card" data-id="p3" data-price="54500" data-name="Contacto Mensual">
+                <div class="product-card__media">
+                    <img src="../img/product-3.jpg" alt="Lentes de contacto mensuales" class="product-card__img">
+                    <span class="product-card__badge">-50% 2da</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Contacto Mensual</h3>
+                    <p class="product-card__meta">Alta humectación · Filtro Azul</p>
+                    <div class="product-card__prices"><span class="product-card__price">$54.500</span></div>
+                    <div class="product-card__actions">
+                        <input class="qty-input" type="number" min="0" value="0" aria-label="Cantidad Contacto Mensual">
+                    </div>
+                </div>
+            </article>
+
+            <!-- 4 -->
+            <article class="product-card" data-id="p4" data-price="72000" data-name="Porto Carey">
+                <div class="product-card__media">
+                    <img src="../img/product-4.jpg" alt="Armazón Porto Carey" class="product-card__img">
+                    <span class="product-card__badge">-50% 2da</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Porto Carey</h3>
+                    <p class="product-card__meta">Acetato · Carey</p>
+                    <div class="product-card__prices"><span class="product-card__price">$72.000</span></div>
+                    <div class="product-card__actions">
+                        <input class="qty-input" type="number" min="0" value="0" aria-label="Cantidad Porto Carey">
+                    </div>
+                </div>
+            </article>
+
+            <!-- 5 -->
+            <article class="product-card" data-id="p5" data-price="64900" data-name="Verona Negro">
+                <div class="product-card__media">
+                    <img src="../img/product-8.jpg" alt="Sol Verona Negro" class="product-card__img">
+                    <span class="product-card__badge">-50% 2da</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Verona Negro</h3>
+                    <p class="product-card__meta">UV400 · Negro</p>
+                    <div class="product-card__prices"><span class="product-card__price">$64.900</span></div>
+                    <div class="product-card__actions">
+                        <input class="qty-input" type="number" min="0" value="0" aria-label="Cantidad Verona Negro">
+                    </div>
+                </div>
+            </article>
+
+            <!-- 6 -->
+            <article class="product-card" data-id="p6" data-price="39000" data-name="Diario Comfort">
+                <div class="product-card__media">
+                    <img src="../img/product-9.webp" alt="Lentes de contacto diario pack" class="product-card__img">
+                    <span class="product-card__badge">-50% 2da</span>
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Diario Comfort</h3>
+                    <p class="product-card__meta">Importado</p>
+                    <div class="product-card__prices"><span class="product-card__price">$39.000</span></div>
+                    <div class="product-card__actions">
+                        <input class="qty-input" type="number" min="0" value="0" aria-label="Cantidad Diario Comfort">
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- RESUMEN -->
+    <section class="container" id="resumen" aria-live="polite" aria-atomic="true">
+        <header class="products-section__head">
+            <h2 class="products-section__title">Resumen de compra</h2>
+            <p class="products-section__subtitle">Promo aplicada: <strong id="promoName">2x1 (50% en la segunda unidad)</strong></p>
+        </header>
+
+        <div class="cart-summary">
+            <div class="cart-summary__totals">
+                <p><strong>Subtotal (sin promo):</strong> <span id="subtotal">$0</span></p>
+                <p><strong>Descuento promo:</strong> <span id="discount">$0</span></p>
+                <p class="cart-summary__total"><strong>Total con descuento:</strong> <span id="total">$0</span></p>
+            </div>
+
+            <div class="cart-summary__breakdown">
+                <h3 class="services-list__title">Desglose</h3>
+                <ul id="breakdown" class="services-list"></ul>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <a class="footer__logo" href="#">Lumen</a>
+            <p class="footer__desc">Óptica y anteojos de diseño. Calidad, estilo y protección para todos los días.</p>
+        </div>
+
+        <nav class="footer__nav" aria-label="Mapa del sitio">
+            <h4 class="footer__title">Mapa del sitio</h4>
+            <ul class="footer__list">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./promociones.html">Promociones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__social">
+            <h4 class="footer__title">Seguinos</h4>
+            <ul class="footer__social-list">
+                <li><i class="fi fi-brands-instagram"></i> <a href="#" aria-label="Instagram">@lumen</a></li>
+                <li><i class="fi fi-brands-facebook"></i> <a href="#" aria-label="Facebook">/lumen</a></li>
+                <li><i class="fi fi-brands-tik-tok"></i> <a href="#" aria-label="TikTok">@lumen</a></li>
+                <li><a href="#" aria-label="WhatsApp">+54 9 11 0000-0000</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__newsletter">
+            <h4 class="footer__title">Newsletter</h4>
+            <p class="footer__hint">Novedades, lanzamientos y promos (cero spam).</p>
+            <form class="footer__form" action="#" method="post">
+                <input id="newsletter-email" name="email" type="email" placeholder="tu@email.com" required>
+                <button class="button--secondary" type="submit">Suscribirme</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+            <small>©<span id="year"></span> Lumen. Todos los derechos reservados.</small>
+            <ul class="footer__legal">
+                <li><a href="#">Términos</a></li>
+                <li><a href="#">Privacidad</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script src="../js/promociones.js"></script>
+</body>
+</html>
